@@ -13,8 +13,7 @@
         android:text="CHISLO 30"
         android:textStyle="bold"
         android:textSize="30dp"
-        android:padding="20dp"
-        android:laout_gravity="center"/>
+        android:padding="20dp" />
 
     <TextView
         android:id="@+id/descriptionTV"

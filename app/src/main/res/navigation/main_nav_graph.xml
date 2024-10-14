@@ -2,18 +2,18 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_nav_graph"
-    app:startDestination="@id/interestingFactFragment">
+    app:startDestination="@id/factDescriptionFragment">
 
     <fragment
         android:id="@+id/interestingFactFragment"
         android:name="com.nelalexxx.interestingfactsaboutnumberstesttask.ui.fragments.interestingFact.InterestingFactFragment"
-        android:label="InterestingFactFragment" >
-        <action
-            android:id="@+id/action_interestingFactFragment_to_factDescriptionFragment"
-            app:destination="@id/factDescriptionFragment" />
-    </fragment>
+        android:label="InterestingFactFragment" />
     <fragment
         android:id="@+id/factDescriptionFragment"
         android:name="com.nelalexxx.interestingfactsaboutnumberstesttask.ui.fragments.factDesciption.FactDescriptionFragment"
-        android:label="FactDescriptionFragment" />
+        android:label="FactDescriptionFragment" >
+        <action
+            android:id="@+id/action_factDescriptionFragment_to_interestingFactFragment"
+            app:destination="@id/interestingFactFragment" />
+    </fragment>
 </navigation>
